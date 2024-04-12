@@ -13,9 +13,9 @@ pip install janome==0.5.0
 pip install termcolor==2.4.0
 pip install datasets==2.18.0
 pip install wandb==0.15.4
-cd ../SimulEval & pip install -e . & cd ../scripts
+cd ../SimulEval && pip install -e . && cd ../scripts
 pip install einops==0.6.1
-cd ../bleurt & pip install -e . & cd ../scripts
+cd ../bleurt && pip install -e . && cd ../scripts
 pip install openai==0.27.10
 pip install tiktoken==0.5.2
 pip install bitsandbytes==0.39.0
