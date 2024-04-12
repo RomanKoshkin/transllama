@@ -1,7 +1,7 @@
 TARGET_LANGUAGE = 'Russian'
-# MODEL_NAME = 'gpt-4'
+MODEL_NAME = 'gpt-4'
 # MODEL_NAME = 'gpt-3.5-turbo-0613'
-MODEL_NAME = 'gpt-4-1106-preview'
+# MODEL_NAME = 'gpt-4-1106-preview'
 WAIT_K = 1
 MAX_TOKENS = 10
 TEMPERATURE = 0.0

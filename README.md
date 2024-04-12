@@ -12,8 +12,10 @@ which displayed encouraging results in performing the SiMT task without prior tr
 
 # Quickstart
 
+We tested this code with CUDA 12.1 and python 3.10. If you have problems, please open an issue.
+
 1) Rename `.env.example` to `.env` and set the enviroment variables.
-```
+```bash
 PATH_ROOT=<absolute_path_to_where_you_cloned_this_repo_to>
 HF_HOME=<some_path>/huggingface_cache
 WANDB_CONFIG_DIR=<some_path>/.wandb
@@ -21,12 +23,14 @@ WANDB_DIR=<some_path>/.wandb
 WANDB_CACHE_DIR=<some_path>/.wandb
 ```
 
-Install dependencies listed in `requirements.txt`
+Install essential dependencies:
 
 ```bash
-pip install -U git+https://github.com/huggingface/transformers.git@e03a9cc
+cd scripts
+sh install_requirements.sh
 ```
 
+The full list of dependencies is in `requirements.txt`.
 
 # Data
 
@@ -168,14 +172,14 @@ python se.py \
     --min_lag 1
 ```
 
-### Evaluation of OpenAI's GPT on `TED-TST-2023` (`en-de`) with resampling
+### Evaluation of OpenAI zero-shot on `TED-TST-2023` (`en-de`) with resampling
 
 ```bash
 cd evaluation
 sh eval_openai_s2tt_w_resamp_DE.sh
 ```
 
-### Evaluation of OpenAI's GPT on `TED-TST-2023` (`en-ru`) with resampling
+### Evaluation of OpenAI zero-shot on `TED-TST-2023` (`en-ru`) with resampling
 
 ```bash
 cd evaluation
