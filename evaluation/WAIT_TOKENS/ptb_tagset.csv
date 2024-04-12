@@ -1,0 +1,37 @@
+ID	tag	Description	func_w
+1	CC	Coordinating conjunction	True
+2	CD	Cardinal number	False
+3	DT	Determiner	True
+4	EX	Existential there	True
+5	FW	Foreign word	False
+6	IN	Preposition or subordinating conjunction	True
+7	JJ	Adjective	False
+8	JJR	Adjective comparative	False
+9	JJS	Adjective superlative	False
+10	LS	List item marker	False
+11	MD	Modal	True
+12	NN	Noun singular or mass	False
+13	NNS	Noun plural	False
+14	NNP	Proper noun singular	False
+15	NNPS	Proper noun plural	False
+16	PDT	Predeterminer	True
+17	POS	Possessive ending	True
+18	PRP	Personal pronoun	False
+19	PRP$	Possessive pronoun	True
+20	RB	Adverb	True
+21	RBR	Adverb comparative	True
+22	RBS	Adverb superlative	True
+23	RP	Particle	True
+24	SYM	Symbol	False
+25	TO	to	True
+26	UH	Interjection	True
+27	VB	Verb base form	False
+28	VBD	Verb past tense	False
+29	VBG	Verb gerund or present participle	False
+30	VBN	Verb past participle	False
+31	VBP	Verb non-3rd person singular present	False
+32	VBZ	Verb 3rd person singular present	False
+33	WDT	Wh-determiner	True
+34	WP	Wh-pronoun	True
+35	WP$	Possessive wh-pronoun	True
+36	WRB	Wh-adverb	True
