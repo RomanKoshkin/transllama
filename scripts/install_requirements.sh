@@ -1,5 +1,6 @@
 #!/bin/bash
 
+pip install --upgrade pip
 pip install -U git+https://github.com/huggingface/transformers.git@e03a9cc
 pip install peft==0.8.2
 pip install python-dotenv
