@@ -18,3 +18,4 @@ cd ../bleurt & pip install -e . & cd ../scripts
 pip install openai==0.27.10
 pip install tiktoken==0.5.2
 pip install bitsandbytes==0.39.0
+pip install peft==0.8.2
