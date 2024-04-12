@@ -1,6 +1,7 @@
 #!/bin/bash
 
 pip install -U git+https://github.com/huggingface/transformers.git@e03a9cc
+pip install peft==0.8.2
 pip install python-dotenv
 pip install simalign==0.3
 pip install numpy==1.23.5
