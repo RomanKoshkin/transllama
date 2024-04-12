@@ -15,6 +15,7 @@ which displayed encouraging results in performing the SiMT task without prior tr
 We tested this code with CUDA 12.1 and python 3.10. If you have problems, please open an issue.
 
 1) Rename `.env.example` to `.env` and set the enviroment variables.
+
 ```bash
 PATH_ROOT=<absolute_path_to_where_you_cloned_this_repo_to>
 HF_HOME=<some_path>/huggingface_cache
@@ -23,7 +24,7 @@ WANDB_DIR=<some_path>/.wandb
 WANDB_CACHE_DIR=<some_path>/.wandb
 ```
 
-Install essential dependencies:
+2) Install essential dependencies:
 
 ```bash
 cd scripts
