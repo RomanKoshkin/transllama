@@ -44,15 +44,11 @@ Fine-tuning is done on `enimai/MuST-C-de` and `enimai/MuST-C-de`. Evaluation is 
 
 The `prepare_ende_mustc_2.py` script takes raw sentences from `enimai/MuST-C-de`, causally aligns them and prepares for batching. If you want to create your own fine-tuning dataset, the easiest way would be to collect your sentence pairs and convert them to a huggingface format.
 
-```bash
-cd tools
-python prepare_ende_mustc_2.py
-```
 
 ### for `en-de`
 
 ```bash
-cd tools
+cd scripts
 python prepare_ende_mustc_2.py
 ```
 
@@ -66,7 +62,7 @@ sh make_train_de_chunkwise.sh
 ### for `en-ru`
 
 ```bash
-cd tools
+cd scripts
 python prepare_enru_mustc_2.py
 ```
 
