@@ -26,8 +26,6 @@ WANDB_CACHE_DIR=<some_path>/.wandb
 
 2) Install essential dependencies (preferably into a clean environment):
 
-``
-
 ```bash
 conda create -n transllama python=3.10
 conda activate transllama
