@@ -20,3 +20,5 @@ pip install openai==0.27.10
 pip install tiktoken==0.5.2
 pip install bitsandbytes==0.39.0
 pip install peft==0.8.2
+pip instal tokenizers-0.19.1 
+pip install transformers-4.41.2
