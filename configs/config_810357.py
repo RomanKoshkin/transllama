@@ -83,7 +83,7 @@ NUM_BEAMS = 1
 BEAM_DEPTH = 1
 MAX_WAIT_TOKEN_COUNT = 5  # NOTE: !!!!
 
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, device_map="auto")
 
 # NOTE: set the pad token to UNK (0), because it has a low probability and is not masked in the labels
 tokenizer.pad_token = '<unk>'

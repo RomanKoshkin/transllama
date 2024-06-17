@@ -141,9 +141,9 @@ class DummyModel:
 
 model = AutoModelForCausalLM.from_pretrained(
     MODEL_NAME,
-    device_map=DEVICE,  # "auto" to put different layers of the model to diff devs as necessary
+    device_map="auto",  # "auto" to put different layers of the model to diff devs as necessary
     trust_remote_code=True,
-    quantization_config=None if DEVICE == "cpu" else BNB_CONFIG,
+    quantization_config=BNB_CONFIG,
 )
 
 # comment test the base model (before fine-tuning)
@@ -261,9 +261,11 @@ def predict_next_word(src_text, TRANSLATION_TOKENS, source_finished=None):
     while True:
 
         prompt = make_prompt(src_text, TRANSLATION_TOKENS)
-        encoding = tokenizer(prompt, add_special_tokens=False, return_tensors="pt").to(
-            DEVICE
-        )
+        encoding = tokenizer(
+            prompt,
+            add_special_tokens=False,
+            return_tensors="pt"
+            )
         cprint(prompt, color="red")
         with open("prompt.log", "a") as f:
             f.write(prompt + "\n")
@@ -484,10 +486,10 @@ class ASR:
         self.processor = WhisperProcessor.from_pretrained(ASR_MODEL_NAME)
         self.asr_model = WhisperForConditionalGeneration.from_pretrained(
             ASR_MODEL_NAME
-        ).to(DEVICE)
+        ).to("cuda:0")
         self.asr_model.config.forced_decoder_ids = None
         self.srate = SRATE
-        self.DEVICE = DEVICE
+        self.DEVICE = "cuda:0"
 
     def _postprocess(self, s, source_finished):
         # drop incomplete words

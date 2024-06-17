@@ -6,7 +6,7 @@ for MIN_READ_TIME in 1.9; do
             --source /home/roman/CODE/gremlin/evaluation/SOURCES/fleurs_en_de_102 \
             --target /home/roman/CODE/gremlin/evaluation/OFFLINE_TARGETS/fleurs_en_de_102.txt \
             --agent s2tt_agent_NEW.py \
-            --config_id 811357 \
+            --config_id 810357 \
             --wait_k 1 \
             --device_id 0 \
             --source-segment-size 200 \
