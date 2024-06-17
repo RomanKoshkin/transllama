@@ -217,6 +217,7 @@ def general_parser():
         default='small',
         help="ASR model size",
     )
+    parser.add_argument("--min_read_time", type=float, default=0)
 
     parser.add_argument(
         "--min_lag",
