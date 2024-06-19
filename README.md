@@ -4,6 +4,9 @@
 
 ![asdf](assets/output.gif)
 
+🫵 There's a faster implementation of TransLLaMA. If you want that, check out the `evo` branch and follow the instructions in `README.md` there.
+
+
 # Abstract
 
 Decoder-only large language models (LLMs) have recently demonstrated impressive capabilities in text generation and reasoning. Nonetheless, they have limited applications in simultaneous machine translation (SiMT), currently dominated by encoder-decoder transformers. This study demonstrates that, after fine-tuning on a small dataset comprising causally aligned source and target sentence pairs, a pre-trained open-source LLM can control input segmentation directly by generating a special "wait" token. This obviates the need for a separate policy and enables the LLM to perform EnglishGerman and English-Russian SiMT tasks with BLEU scores that are comparable to those of specific state-of-the-art baselines. We also evaluated closed-source models such as GPT-4,

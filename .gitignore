@@ -1,0 +1,11 @@
+./vscode/*
+.env
+*__pycache__*
+bleurt/bleurt/__pycache__/*
+bleurt/bleurt/lib/__pycache__/*
+evaluation/ONLINE_TARGETS/*
+SimulEval/simuleval.egg-info/*
+*.pyc
+evaluation/ASR_RESULTS/*
+evaluation/WAIT_TOKENS/*
+evaluation/S2T_METRICS.json
