@@ -7,7 +7,11 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--device_id", type=int, default=-1)
 args, unknown_args = parser.parse_known_args()
 
-os.environ["CUDA_VISIBLE_DEVICES"] = str(args.device_id)  # NOTE: this is set in the cli.py
+if args.device_id != -1:
+    os.environ["CUDA_VISIBLE_DEVICES"] = str(args.device_id)  # NOTE: this is set in the cli.py
+else:
+    os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"  # NOTE: this is set in the cli.py
+cprint(os.environ["CUDA_VISIBLE_DEVICES"], color='red', attrs=['bold'])
 cprint(os.getcwd(), color='magenta', attrs=['bold'])
 time.sleep(5)
 
